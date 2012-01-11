@@ -1,0 +1,94 @@
+<?xml version = '1.0'?>
+<kdevelop>
+  <general>
+    <author>Dmitry V. Sabanin</author>
+    <email>sdmitry@lrn.ru</email>
+    <version>$VERSION$</version>
+    <projectmanagement>KDevAutoProject</projectmanagement>
+    <primarylanguage>C</primarylanguage>
+    <ignoreparts>
+      <part>KDevFileView</part>
+    </ignoreparts>
+    <projectdirectory>.</projectdirectory>
+    <absoluteprojectpath>false</absoluteprojectpath>
+    <description></description>
+  </general>
+  <kdevautoproject>
+    <general>
+      <activetarget>src/dia2code</activetarget>
+      <useconfiguration>default</useconfiguration>
+    </general>
+    <run>
+      <mainprogram>dia2code/dia2code</mainprogram>
+      <programargs>-d /tmp /tmp/test.dia</programargs>
+      <terminal>false</terminal>
+      <envvars/>
+    </run>
+    <make>
+      <envvars>
+        <envvar value="1" name="WANT_AUTOCONF_2_5" />
+        <envvar value="1" name="WANT_AUTOMAKE_1_6" />
+      </envvars>
+      <abortonerror>false</abortonerror>
+      <numberofjobs>1</numberofjobs>
+      <dontact>false</dontact>
+      <makebin></makebin>
+    </make>
+  </kdevautoproject>
+  <kdevdebugger>
+    <general>
+      <dbgshell>./libtool</dbgshell>
+      <programargs>ruby-support/test.dia -d ruby-support/output</programargs>
+      <gdbpath>gdb</gdbpath>
+      <breakonloadinglibs>true</breakonloadinglibs>
+      <separatetty>false</separatetty>
+      <floatingtoolbar>true</floatingtoolbar>
+      <runappinappdirectory>true</runappinappdirectory>
+    </general>
+    <display>
+      <staticmembers>true</staticmembers>
+      <demanglenames>true</demanglenames>
+    </display>
+  </kdevdebugger>
+  <kdevfilecreate>
+    <filetypes/>
+    <useglobaltypes>
+      <type ext="c" />
+      <type ext="h" />
+    </useglobaltypes>
+  </kdevfilecreate>
+  <kdevcvs>
+    <cvsoptions>-f</cvsoptions>
+    <commitoptions></commitoptions>
+    <updateoptions>-dP</updateoptions>
+    <addoptions></addoptions>
+    <removeoptions>-f</removeoptions>
+    <diffoptions>-u3 -p</diffoptions>
+    <logoptions></logoptions>
+    <rshoptions></rshoptions>
+  </kdevcvs>
+  <kdevdoctreeview>
+    <projectdoc>
+      <userdocDir>/home/sources/dia2code-ruby-0.8.1/html/</userdocDir>
+      <apidocDir>/home/sources/dia2code-ruby-0.8.1/html/</apidocDir>
+    </projectdoc>
+  </kdevdoctreeview>
+  <cppsupportpart>
+    <codecompletion/>
+    <filetemplates>
+      <choosefiles>false</choosefiles>
+      <interfaceURL></interfaceURL>
+      <implementationURL></implementationURL>
+      <interfacesuffix>.h</interfacesuffix>
+      <implementationsuffix>.cpp</implementationsuffix>
+      <lowercasefilenames>true</lowercasefilenames>
+    </filetemplates>
+  </cppsupportpart>
+  <kdevclassview>
+    <folderhierarchy>true</folderhierarchy>
+    <depthoffolders>2</depthoffolders>
+  </kdevclassview>
+  <kdevfileview>
+    <groups/>
+  </kdevfileview>
+</kdevelop>

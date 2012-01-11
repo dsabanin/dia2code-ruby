@@ -1,0 +1,3 @@
+* Interfaces are modules
+* Only single inheiritance supported
+* Every attribute is created with :attr

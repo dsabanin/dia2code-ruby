@@ -1,0 +1,5 @@
+Recommended ./configure params:
+	./configure --program-suffix='-ruby'
+
+Other info:
+	make - builds test and docs with rdoc from generated file
